@@ -1,0 +1,42 @@
+# -----------------
+#launchers
+# -----------------
+
+# retroarch
+retroarch="retroarch -f -L /home/x/.config/retroarch/cores/"
+lib="libretro.so"
+
+# -----------------
+# retroarch cores
+# -----------------
+
+# Nintendo
+# 3ds
+c_3ds="citra_${lib}"
+# ds
+c_ds="desmume_${lib}"
+# gameboy
+c_gameboy="gambatte_${lib}"
+# snes,snes cd
+c_snes="snes9x_${lib}"
+# 64
+c_64="mupen64plus_next_${lib}"
+
+# -----------------
+# system launchers
+# -----------------
+
+# Nintendo
+# 3ds
+la_nintendo_3ds=$retroarch$c_3ds
+# ds
+la_ds=$retroarch$c_ds
+# gameboy
+la_nintendo_gameboy=$retroarch$c_gameboy
+# snes cd
+la_nintendo_snes_cd=$retroarch$c_snes
+#nintendo 64
+la_nintendo_64=$retroarch$c_64
+
+
+

@@ -1,0 +1,11 @@
+# -----------------
+# game paths
+# -----------------
+
+# remote root system path
+remote_data_root="/home/x/Games/systems/"
+# local run path relative to sync script
+local_run_root="../run/"
+# local game data path relative to sync script
+local_data_root="../data_local/"
+

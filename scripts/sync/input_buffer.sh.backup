@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# ==========================================
+# Read sources
+source ./paths.dat
+source ./launchers.dat
+# ==========================================
+
+#set manafacture
+
+man="nintendo"
+# Set system
+sys="snes_cd"
+#set launcher 
+la=${la_snes}
+# set if roms are in subfolders or flat , false = flat true = subfolders
+subfolder_check=true
+
+#set file extension -
+
+ext1=sfc
+ext2=
+ext3=
+ext4=
+ext5=
+ext6=
+
+if [ -d ${remote_data_root}${man}/${sys} ]
+then
+source ./sync.sh
+else 
+source ./sync_local.sh
+fi
+
+
